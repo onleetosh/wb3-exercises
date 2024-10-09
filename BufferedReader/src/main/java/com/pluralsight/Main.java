@@ -35,6 +35,6 @@ public class Main {
 
 
     private static void displayEmployee(Employee e){
-        System.out.printf("%d:%s Pay this period: %.2f \n", e.getEmployeeID(), e.getName(), e.CalculateGrossPay());
+        System.out.printf("%d:%s Pay this period: $%.2f \n", e.getEmployeeID(), e.getName(), e.CalculateGrossPay());
     }
 }
