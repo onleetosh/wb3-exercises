@@ -86,7 +86,9 @@ public class BedtimeStories {
                     }
                     break;
                 } else {
-                    System.out.println("Invalid option.");
+                    System.out.println("Invalid input. Please enter a number between 1 and 3.");
+                    prompt.next();  // Clear the invalid input
+
                 }
 
             }
