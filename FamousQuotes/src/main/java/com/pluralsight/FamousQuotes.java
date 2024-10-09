@@ -7,8 +7,8 @@ public class FamousQuotes {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
-        //create an array with 10 quotes
-        String[] quotes = {
+        //create an array with 10 quotes where position 0 is " " empty allowing the return of a quote between 1 -10
+        String[] quotes = { " Goodbye",
                 " \"If you don’t take risks, you can’t create a future.\" \n\t\t— Monkey D. Luffy, One Piece ",
                 " \"Push through the pain. Giving up hurts more.\" \n\t\t— Vegeta, Dragon Ball Z ",
                 " \"Hard work is worthless for those that don’t believe in themselves.\" \n\t\t— Naruto Uzumaki, Naruto ",
