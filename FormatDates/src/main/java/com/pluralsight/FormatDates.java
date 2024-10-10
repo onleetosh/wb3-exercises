@@ -5,11 +5,8 @@
 
 package com.pluralsight;
 
-import javax.swing.text.DateFormatter;
-import java.text.DateFormat;
-import java.time.LocalDate;
+
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
 public class FormatDates {
@@ -34,9 +31,16 @@ public class FormatDates {
         System.out.println("\nFormat 3: "+ formattedDate3);
 
         //format(fmt) to show (day, mon date, year  HH:mm)
-        DateTimeFormatter fmt4 = DateTimeFormatter.ofPattern("E, MMM dd, yyyy  HH:mm");
+        DateTimeFormatter fmt4 = DateTimeFormatter.ofPattern("E, MMM dd, yyyy  HH:mm a");
         String formattedDate4 = current.format(fmt4);
         System.out.println("\nFormat 4: "+ formattedDate4);
+
+        //format(fmt) to show (ex. 5:02 on 05-Sep-2021 ) with local time zone
+        //ZonedDateTime zone = ZonedDateTime.now();
+        DateTimeFormatter fmt5 = DateTimeFormatter.ofPattern("HH:mm a 'on' MMM, dd, yyyy");
+        String formattedDate5 = current.format(fmt5);
+        System.out.println("\nFormat 5: "+ formattedDate5);
+
 
 
 
