@@ -1,3 +1,15 @@
+/*
+    TODO: Create a Java application named SearchEngineLogger.
+    Create a method to log the actions of the user. Write each user action to a file
+    name logs.txt.
+    Actions include: a. Launching the application
+                     b. Searching for a term
+                     c. Exiting the application
+    In the main() method prompt the user for a search term that they wish to search.
+
+ */
+
+
 package com.pluralsight;
 
 import java.io.IOException;
